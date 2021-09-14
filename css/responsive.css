@@ -1,0 +1,96 @@
+@media only screen and (max-width: 576px) {
+
+    /************** nav **********/
+    .nav__list {
+        position: absolute;
+        top: 0;
+        left: -170px;
+        bottom: 0;
+        background-color: var(--mainBlue);
+        flex-direction: column;
+        align-items: center;
+        z-index: 999;
+        margin: 0;
+        width: 170px;
+        transition: all 0.3s;
+        position: fixed;
+    }
+
+    .nav__item {
+        padding: 20px 0;
+    }
+
+
+    .nav__link {
+        color: var(--mainWhite);
+    }
+
+
+    .nav__link:hover {
+        color: var(--mainWhite);
+    }
+
+
+    .nav__media {
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        z-index: 999;
+        bottom: 0;
+        left: -170px;
+        width: 170px;
+        transition: all 0.3s;
+        position: fixed;
+    }
+
+    .nav__media a {
+        color: var(--mainBlack);
+    }
+
+
+    .nav__media a:hover {
+        color: var(--mainBlack);
+    }
+
+
+    .nav__responsive {
+        display: block !important;
+    }
+
+
+
+    /************** header **********/
+    .header__caption {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {}
+
+
+@media only screen and (max-width: 992px) {
+    /**************** inventory ******************/
+    .btns {
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {}
+
+
+
+/********************* min-width ************************************/
+
+@media only screen and (min-width: 576px) {}
+
+
+@media only screen and (min-width: 768px) {}
+
+
+@media only screen and (min-width: 992px) {}
+
+
+@media only screen and (min-width: 1200px) {}
