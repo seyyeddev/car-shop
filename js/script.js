@@ -27,3 +27,48 @@ navbtn.addEventListener("click", () => {
         
     }
 })
+
+
+/////////////////////
+let cards = document.querySelectorAll(".card");
+let btns = document.querySelectorAll(".btns__item");
+
+
+btns[0].addEventListener("click", () => {
+    cards.forEach((card) => {
+        if (card.classList.contains("d-none")) {
+            card.classList.remove("d-none");
+        }
+    })
+})
+
+
+btns[1].addEventListener("click", (e) => {
+
+    cards.forEach((card) => {
+
+        if (card.classList.contains("d-none")) {
+            card.classList.remove("d-none")
+        }
+
+        if (card.getAttribute("model") !== btns[1].innerHTML) {
+           card.classList.add("d-none");
+        }
+
+    })
+})
+
+btns[2].addEventListener("click", (e) => {
+
+    cards.forEach((card) => {
+
+        if (card.classList.contains("d-none")) {
+            card.classList.remove("d-none")
+        }
+        
+        if (card.getAttribute("model") !== btns[2].innerHTML) {
+           card.classList.add("d-none");
+        }
+        
+    })
+})

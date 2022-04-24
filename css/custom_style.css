@@ -40,6 +40,10 @@ body {
   display: flex !important;
 }
 
+.d-none {
+  display: none !important;
+}
+
 .flex-end {
   justify-content: flex-end;
 }
